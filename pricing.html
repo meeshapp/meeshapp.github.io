@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>MeeshApp | Calgary Based Web Developers </title>
+	<link href="http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<link href="reset.css" rel="stylesheet" type="text/css">
+	<link href="main.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!----scroll to top------>
+    <script type='text/javascript'>
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+</head>
+<body>
+    
+	<div id="container" class="pricing">
+		<div id="navigationBar">
+			<div class="boxed"> <a href="contactUs.html">Contact Us</a> </div>
+			<div class="boxed"> <a href="pricing.html">Pricing</a> </div>           
+			<div class="boxed" style="width:100px;">
+            	<div class="noUnderLine">
+                	<a href="#">Services </a>
+                		<div id="navArrow"><img src="images/minimalSymbols/navArrow.png"></div>                	 
+                </div>
+                <ul class="subNav">
+                    <li> <a href="webDev.html"> Web Development </a> </li>
+                    <li> <a href="portfolio.html"> Portfolio </a></li>
+                    <li> <a href="graphicDesign.html"> Graphic Design </a></li>                
+                    <li> <a href="marketing.html"> Marketing </a></li>
+                </ul>
+            </div>           
+			<div class="boxed"><a href="index.html">Home</a> </div>
+			<a href="index.html">
+				<div id="logo"> </div>
+			</a>
+		</div>
+        
+        <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+        
+        <h2 class="pgName" style="background-image:url(images/pricing.png); padding-left: 130px;">Pricing</h2>
+        
+
+		<div id="contentPricing">
+			<section>
+				<ul>
+					<li class="boxColumn" style="background-image:url(images/minimalSymbols/gold.png); background-size:100% 175%; color:white;">
+						<h2>Gold</h2>
+						<hr class="hrLine">
+						
+						<p>The Gold package is our entry-level webdesign bundle. It's tailored to meet the needs of small business and personal hobby sites alike. It's everything you need to get started in the world of online marketing.</p>
+						<br>
+						<ul>
+							<hr class="hrLine">
+							<li>$50 / logo design</li>
+							<hr class="hrLine">
+							<li>No Mobile Compatibility </li>
+							<hr class="hrLine">
+							<li>Basic HTML5 And CSS3Code</li>
+							<hr class="hrLine">
+							<li>Up to 3 pages of high-quality design</li>
+							<hr class="hrLine">
+							<br>
+							<li>Starts at
+								<div class="price"> $299.99 </div>
+							</li>
+							<hr class="hrLine"> </ul>
+						<br>
+						<br>
+						<br><!------ <a class="btnPrice" href="https://en.wikipedia.org/wiki/Gold">More Info</a> -----> </li>
+					<li class="boxColumn" style="background-image:url(images/minimalSymbols/platnium.png); background-size:100% 190%;">
+						<h2>Platinum</h2>
+						<hr class="hrLine">
+						
+						<p>Our Platinum bundle is molded to fit an intermediate level business or personal website. This package delivers all the components to get you on the fast-track to interacting with your online demographic.</p>
+						<br>
+						<ul>
+							<hr class="hrLine">
+							<li>2 Complimentary Logo Designs</li>
+							<hr class="hrLine">
+							<li>Mobile Friendly Capability</li>
+							<hr class="hrLine">
+							<li>Commented HTML5 And CSS3Code</li>
+							<hr class="hrLine">
+							<li>Basic Media Marketing Package</li>
+							<hr class="hrLine">
+							<br>
+							<li>Starts at
+								<div class="price">$599.99</div>
+							</li>
+							<hr class="hrLine"> </ul>
+						<br>
+						<br>
+						<br><!------ <a class="btnPrice" href="https://en.wikipedia.org/wiki/Platinum">More Info</a>-----> </li>
+					<li class="boxColumn" style="background-image:url(images/minimalSymbols/diamond.png);">
+						<h2>Diamond</h2>
+						<hr class="hrLine">
+						
+						<p>MeeshApp's premium collection features an ultimate selection of elements to enrich the digital experience for your customers and yourself. With the Diamond package you're guaranteed a superior online marketing experience.</p>
+						<br>
+						<ul>
+							<hr class="hrLine">
+							<li>4 Complimentary Logo Designs</li>
+							<hr class="hrLine">
+							<li>Full Mobile Compatibility</li>
+							<hr class="hrLine">
+							<li>1 Year of Free Domain Hosting</li>
+							<hr class="hrLine">
+							<li>Autographs from the Developers</li>
+							<hr class="hrLine">
+							<br>
+							<li>Starts at
+								<div class="price">$799.99</div>
+							</li>
+							<hr class="hrLine"> </ul>
+						<br>
+						<br>
+						<br><!------ <a class="btnPrice" href="https://en.wikipedia.org/wiki/Diamond">More Info</a> -----> </li>
+				</ul>
+                
+			</section>
+			<!--close section-->
+		</div>
+        
+		<!--close content -->
+		</div>
+	<section class="footer1-plate">
+		<div class="footer1">
+			<h2><strong>About Us</strong> </h2>
+			<p>At MeeshApp, we believe in not only designing products, but designing an experience. We’re committed to providing you with a high quality website, whether it be for business, commercial, charitable, or personal use. Our team is a cohesive unit that will ensure you’re presented with a website that is sure to exceed your expectations.</p>
+		</div>
+		<div class="footer1">
+			<div id="map-canvas">
+				<script src="http://maps.googleapis.com/maps/api/js"></script>
+				<script>
+					var myCenter = new google.maps.LatLng(51.169655, -113.968804);
+
+					function initialize() {
+						var mapProp = {
+							center: myCenter,
+							zoom: 15,
+							mapTypeId: google.maps.MapTypeId.ROADMAP
+						};
+						var map = new google.maps.Map(document.getElementById("map-canvas"), mapProp);
+						var marker = new google.maps.Marker({
+							position: myCenter,
+							animation: google.maps.Animation.BOUNCE
+						})
+						marker.setMap(map);
+					}
+					google.maps.event.addDomListener(window, 'load', initialize);
+				</script>
+			</div>
+		</div>
+		<div class="footer1">
+			<h2><strong>Our Location</strong></h2>
+			<p>108 REDSTONE VILLAS NE,
+				<br> CALGARY, ALBERTA, CANADA</p>
+			<p>Email us to book your appointment</p>
+			<p><a href="mailto:meeshappdevelopers@gmail.com">meeshappdevelopers@gmail.com</a> </p>
+            <br><br><br>            <p><a href="index.html">Home</a>
+			<a href="pricing.html">Pricing</a>
+			<a href="contactUs.html">Contact Us</a></p> </div>
+	</section>
+	<section>
+		<div id="footer">
+			<p>&copy; Copyright 2016. Meeshapp Developers. All Rights Reserved. Designed by MeeshApp Developers.
+				<a href="https://www.instagram.com/meeshapp" onmouseover="this.style.backgroundColor='#f56040'" onmouseout="this.style.backgroundColor=''"> <img src="images/minimalSymbols/instagram%2520copy.png" height="15px;" width="15px" alt="Instagram"> </a>
+				<a href="https://twitter.com/meeshapp" onmouseover="this.style.backgroundColor='#55acee'" onmouseout="this.style.backgroundColor=''"> <img src="images/minimalSymbols/twittercopy.png" height="15px;" width="15px" alt="Twitter"> </a>
+				<a href="https://facebook.com/meeshapp" onmouseover="this.style.backgroundColor='#3b5998'" onmouseout="this.style.backgroundColor=''"> <img src="images/minimalSymbols/facebook%2520copy.png" height="15px;" width="15px" alt="Facebook"> </a>
+			</p>
+		</div>
+	</section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+</body>
+
+</html>

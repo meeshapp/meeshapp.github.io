@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>MeeshApp | Calgary Based Web Developers </title>
+	<link href="http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<link href="reset.css" rel="stylesheet" type="text/css">
+	<link href="main.css" rel="stylesheet" type="text/css"> </head>
+
+<body>
+	<div id="container" class="home">
+    
+		<div id="navigationBar">
+			<div class="boxed"> <a href="contactUs.html">Contact Us</a> </div>
+			<div class="boxed"> <a href="pricing.html">Pricing</a> </div>           
+			<div class="boxed" style="width:100px;">
+            	<div class="noUnderLine">
+                	<a href="#">Services </a>
+                		<div id="navArrow"><img src="images/minimalSymbols/navArrow.png"></div>                	 
+                </div>
+                <ul class="subNav">
+                    <li> <a href="webDev.html"> Web Development </a> </li>
+                    <li> <a href="portfolio.html"> Portfolio </a></li>
+                    <li> <a href="graphicDesign.html"> Graphic Design </a></li>                
+                    <li> <a href="marketing.html"> Marketing </a></li>
+                </ul>
+            </div>           
+			<div class="boxed"><a href="index.html">Home</a> </div>
+			<a href="index.html">
+				<div id="logo"> </div>
+			</a>
+		</div>
+		
+        <!-----<a href="sue.html"><div id="SueFloat"><img src="images/minimalSymbols/SueFloat.png" alt=" "></div></a>----->
+        <div id="arrow"> <img width="125px" height="80px" src="images/Arrow.png" alt="Bouncing arrow"> </div>
+        
+		<p id="titleMain" style="color:#E2E2E2">
+            Designing Websites
+			<br> <strong>Designing Experiences.</strong> </p>
+		<br>
+		<div id="slogan">
+			<p class="css-typing">Welcome to Meeshapp, Computer Applications at its finest.</p>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<hr class="hrLine">
+		<br>
+		<br>
+		<br>
+		<br>
+		<section>
+			<table class="tableSetup">
+				<tbody>
+					<tr>
+					
+                    <!---This is for the hover links------>
+                    	<td>
+                        <a href="webDev.html" alt="Link to Web Development Page">
+							<div class="symbol1"><img src="images/minimalSymbols/coding.png" width="100px" height="100px" alt="Web design symbol">
+								<h2>Web Development</h2>
+								<p>At Meeshapp we develop high quality websites for our customers so they can achieve great success in their bussiness.</p>
+							</div>
+                            </a>                            
+						</td>
+                    
+                   
+                        <td><a href="portfolio.html" alt="Link to Web Designing Page">
+
+							<div class="symbol1"><img src="images/minimalSymbols/mac.png" width="100px" height="100px" alt="Web design symbol">
+								<h2>Portfolio</h2>
+								<p>We have worked for many companies throughout the City of Calgary. If you wish to check out our previous work please click here.</p> 
+							</div>
+							</a>
+                        </td>
+                     
+                        
+						<td >
+                        <a href="graphicDesign.html" alt="Link to Graphic Design Page">
+							<div class="symbol1"><img src="images/minimalSymbols/pencil.png" width="100px" height="100px" alt="Web design symbol">
+								<h2>Graphic Designing</h2>
+								<p>We make sure our design approaches are creative, yet professional. We pride ourselves in clean designs.</p>
+							</div>
+                            </a>
+						</td>
+						
+                        
+                        <td>
+                        <a href="marketing.html" alt="Link to Web Development Page">
+							<div class="symbol1"><img src="images/minimalSymbols/marketing.png" width="100px" height="100px" alt="Web design symbol">
+								<h2>Marketing</h2>
+								<p>Connecting your Business to Facebook, Google Plus and Twitter.</p> 
+							</div>
+                            </a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+            
+		</section>
+		<br>
+		<br>
+		<br>
+		<br> </div>
+	<!-- End Container -->
+	<section class="footer1-plate">
+		<div class="footer1">
+			<h2><strong>About Us</strong> </h2>
+			<p>At MeeshApp, we believe in not only designing products, but designing an experience. We’re committed to providing you with a high quality website, whether it be for business, commercial, charitable, or personal use. Our team is a cohesive unit that will ensure you’re presented with a website that is sure to exceed your expectations.</p>
+		</div>
+		<div class="footer1">
+			<div id="map-canvas">
+				<script src="http://maps.googleapis.com/maps/api/js"></script>
+				<script>
+					var myCenter = new google.maps.LatLng(51.169655, -113.968804);
+
+					function initialize() {
+						var mapProp = {
+							center: myCenter,
+							zoom: 15,
+							mapTypeId: google.maps.MapTypeId.ROADMAP
+						};
+						var map = new google.maps.Map(document.getElementById("map-canvas"), mapProp);
+						var marker = new google.maps.Marker({
+							position: myCenter,
+							animation: google.maps.Animation.BOUNCE
+						})
+						marker.setMap(map);
+					}
+					google.maps.event.addDomListener(window, 'load', initialize);
+				</script>
+			</div>
+		</div>
+		<div class="footer1">
+			<h2><strong>Our Location</strong></h2>
+			<p>108 REDSTONE VILLAS NE,
+				<br> CALGARY, ALBERTA, CANADA</p>
+			<p>Email us to book your appointment</p>
+			<p><a href="mailto:meeshappdevelopers@gmail.com">meeshappdevelopers@gmail.com</a> </p>
+      		<br><br><br>            <p><a href="index.html">Home</a>
+			<a href="pricing.html">Pricing</a>
+			<a href="contactUs.html">Contact Us</a></p> </div>
+	</section>
+	<section>
+		<div id="footer">
+			<p>&copy; Copyright 2016. Meeshapp Developers. All Rights Reserved. Designed by the best.
+				<a href="https://www.instagram.com/meeshapp" onmouseover="this.style.backgroundColor='#f56040'" onmouseout="this.style.backgroundColor=''"> <img src="images/minimalSymbols/instagram%2520copy.png" height="15px;" width="15px" alt="Instagram"> </a>
+				<a href="https://twitter.com/meeshapp" onmouseover="this.style.backgroundColor='#55acee'" onmouseout="this.style.backgroundColor=''"> <img src="images/minimalSymbols/twittercopy.png" height="15px;" width="15px" alt="Twitter"> </a>
+				<a href="https://facebook.com/meeshapp" onmouseover="this.style.backgroundColor='#3b5998'" onmouseout="this.style.backgroundColor=''"> <img src="images/minimalSymbols/facebook%2520copy.png" height="15px;" width="15px" alt="Facebook"> </a>
+			</p>
+		</div>
+	</section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+
+</html>

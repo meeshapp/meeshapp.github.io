@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>MeeshApp | Calgary Based Web Developers </title>
+	<link href="http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<link href="reset.css" rel="stylesheet" type="text/css">
+	<link href="main.css" rel="stylesheet" type="text/css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><!----scroll to top------>
+    <script type='text/javascript'>
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+</head>
+<body>
+	<div id="container" class="contactUs">
+		<div id="navigationBar">
+			<div class="boxed"> <a href="contactUs.html">Contact Us</a> </div>
+			<div class="boxed"> <a href="pricing.html">Pricing</a> </div>           
+			<div class="boxed" style="width:100px;">
+            	<div class="noUnderLine">
+                	<a href="#">Services </a>
+                		<div id="navArrow"><img src="images/minimalSymbols/navArrow.png"></div>                	 
+                </div>
+                <ul class="subNav">
+                    <li> <a href="webDev.html"> Web Development </a> </li>
+                    <li> <a href="portfolio.html"> Portfolio </a></li>
+                    <li> <a href="graphicDesign.html"> Graphic Design </a></li>                
+                    <li> <a href="marketing.html"> Marketing </a></li>
+                </ul>
+            </div>           
+			<div class="boxed"><a href="index.html">Home</a> </div>
+			<a href="index.html">
+				<div id="logo"> </div>
+			</a>
+		</div>
+        
+        <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+        
+		<h2 class="pgName" style="background-color: #2d2d2d;">Contact Us</h2>
+        
+		<section style="background-color: whitesmoke;">
+            <br>
+            <br>
+			<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+				<div class="row">
+					<label for="name">Your name:</label>
+					<br>
+					<br>
+					<input class="box" id="name" class="input" name="name" type="text" value="" size="30" placeholder="Name" />
+					<br> </div>
+				<br>
+				<div class="row">
+					<label for="email">Your email:</label>
+					<br>
+					<br>
+					<input class="box" id="email" class="input" name="email" type="text" value="" size="30" placeholder="Email" />
+					<br> </div>
+				<br>
+				<div class="row">
+					<label for="message">What are you looking for?</label>
+					<br>
+					<br>
+					<input type="checkbox" name="f3" value="1"> Web Development &nbsp;
+					<input type="checkbox" name="f3" value="2"> Graphic Design &nbsp;
+					<input type="checkbox" name="f3" value="2"> Web Design &nbsp;
+					<input type="checkbox" name="f3" value="2"> Marketing Support &nbsp;
+                </div>
+				<br>
+				<div class="row">
+					<label for="message">Your message:</label>
+					<br>
+					<br>
+					<textarea class="box" id="message" class="input" name="message" rows="10" cols="40" placeholder="Message"></textarea>
+					<br> </div>
+				<br>
+				<input id="submit_button" type="submit" value="Send email" />
+				<br> </form>
+		</section>
+		<br>
+		<br>
+
+       <section>
+        
+		<h2 class="title">The Team</h2>
+        <br>
+        <br>
+        
+        <section id="ourTeam">       
+        
+		<div class="teamBox teamInfo"> <img src="images/Meet.jpg" width="100%" height="100%" alt="Image of a person">
+			<div class="mask">
+				<h2>MEET</h2>
+				<p>Meet is an Internet technology professional with over 15 years experience in web technologies, business needs, and project life-cycles. With a strong focus on web standards and open source technologies, Meet has had the opportunity to work for a large array of local, national, and international clients. </p>
+			</div>
+		</div>
+		<div class="teamBox teamInfo"> <img src="images/Pranav.jpg" width="100%" height="100%" alt="Image of a person">
+			<div class="mask">
+				<h2>PRANAV</h2>
+				<p>Pranav has been immersed in digital interactive design and development for over 17 years, and balances technical acumen with a strong vision for user experience and information architecture. </p>
+			</div>
+            
+		</div>
+        </section>
+        
+        </section>
+        
+
+
+        </div>	<!-- End Container -->
+	<section class="footer1-plate">
+		<div class="footer1">
+			<h2><strong>About Us</strong> </h2>
+			<p>At MeeshApp, we believe in not only designing products, but designing an experience. We’re committed to providing you with a high quality website, whether it be for business, commercial, charitable, or personal use. Our team is a cohesive unit that will ensure you’re presented with a website that is sure to exceed your expectations.</p>
+		</div>
+		<div class="footer1">
+			<div id="map-canvas">
+				<script src="http://maps.googleapis.com/maps/api/js"></script>
+				<script>
+					var myCenter = new google.maps.LatLng(51.169655, -113.968804);
+
+					function initialize() {
+						var mapProp = {
+							center: myCenter,
+							zoom: 15,
+							mapTypeId: google.maps.MapTypeId.ROADMAP
+						};
+						var map = new google.maps.Map(document.getElementById("map-canvas"), mapProp);
+						var marker = new google.maps.Marker({
+							position: myCenter,
+							animation: google.maps.Animation.BOUNCE
+						})
+						marker.setMap(map);
+					}
+					google.maps.event.addDomListener(window, 'load', initialize);
+				</script>
+			</div>
+		</div>
+		<div class="footer1">
+			<h2><strong>Our Location</strong></h2>
+			<p>108 REDSTONE VILLAS NE,
+				<br> CALGARY, ALBERTA, CANADA</p>
+			<p>Email us to book your appointment</p>
+			<p><a href="mailto:meeshappdevelopers@gmail.com">meeshappdevelopers@gmail.com</a> </p>
+            <br><br><br>          
+            <p>
+                <a href="index.html">Home</a>|
+                <a href="pricing.html">Pricing</a>|
+                <a href="contactUs.html">Contact Us</a>|
+            </p> 
+        </div>
+	</section>
+	<section>
+		<div id="footer">
+			<p>&copy; Copyright 2016. Meeshapp Developers. All Rights Reserved. Designed by MeeshApp Developers.
+				<a href="https://www.instagram.com/meeshapp" onmouseover="this.style.backgroundColor='#f56040'" onmouseout="this.style.backgroundColor=''"> <img src="images/minimalSymbols/instagram%2520copy.png" height="15px;" width="15px" alt="Instagram"> </a>
+				<a href="https://twitter.com/meeshapp" onmouseover="this.style.backgroundColor='#55acee'" onmouseout="this.style.backgroundColor=''"> <img src="images/minimalSymbols/twittercopy.png" height="15px;" width="15px" alt="Twitter"> </a>
+				<a href="https://facebook.com/meeshapp" onmouseover="this.style.backgroundColor='#3b5998'" onmouseout="this.style.backgroundColor=''"> <img src="images/minimalSymbols/facebook%2520copy.png" height="15px;" width="15px" alt="Facebook"> </a>
+			</p>
+		</div>
+	</section>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</body>
+
+</html>
